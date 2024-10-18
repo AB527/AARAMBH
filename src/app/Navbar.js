@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed w-full z-20 top-0 start-0 bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="fixed w-full z-50 top-0 start-0 bg-white border-gray-200 dark:bg-gray-900 shadow-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/sac_logo.png" className="h-8" alt="Flowbite Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AARAMBH</span>
+          <img src="/sac_logo.png" className="h-16" alt="Flowbite Logo" />
+          <span className="self-center text-5xl font-semibold whitespace-nowrap dark:text-white">AARAMBH</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span className="sr-only">Open main menu</span>

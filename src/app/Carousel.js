@@ -1,8 +1,8 @@
 export default function Carousel() {
     const data = ["1", "2", "3", "4", "5"]
     return (
-        <div id="default-carousel" className="relative w-full mt-20 sm:h-3/5" data-carousel="slide">
-            <div className="relative overflow-hidden rounded-lg h-96 sm:h-full">
+        <div id="default-carousel" className="relative w-full mt-20 lg:h-[550px]" data-carousel="slide">
+            <div className="relative overflow-hidden rounded-lg h-96 lg:h-full">
                 {
                     data.map((img,i) => 
                         <div key={i} className="hidden duration-700 ease-in-out" data-carousel-item>

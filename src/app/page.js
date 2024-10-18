@@ -4,7 +4,7 @@ import Teams from "./components/Teams";
 
 export default function Home() {
   return (
-    <div className="max-w-screen-xl m-auto h-screen">
+    <div className="max-w-screen-xl m-auto mt-32">
       <Carousel />
       <Teams />
     </div>
