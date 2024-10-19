@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="max-sm:fixed max-sm:start-0 w-full bg-white dark:bg-gray-900">
+    <footer className="w-full bg-white dark:bg-gray-900">
       <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 dark:text-gray-300 text-center">© 2024 <a href="https://flowbite.com/">AARAMBH</a>. All Rights Reserved.
         </span>

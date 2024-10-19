@@ -1,30 +1,8 @@
 import Image from 'next/image'
 import PlayerCard from "./PlayerCard"
+import {players,teamColors} from "../../data"
 export default function Page({ params }) {
     const team_id = params.team_id
-    const players= [
-        {   
-            name: "Atharva Bedekar", 
-            img: "dummy.png",
-            jerseyNumber: 69,
-            prefs: ["chess", "badminton", "football"]
-        },
-        {   
-            name: "Thomas", 
-            img: "dummy.png",
-            jerseyNumber: 911,
-            prefs: ["badminton", "volleyball"]
-        },
-        {   
-            name: "Atharva Bedekar", 
-            img: "dummy.png",
-            jerseyNumber: 69,
-            prefs: ["chess", "badminton", "football"]
-        }
-    ]
-    const teamColors={
-        "renegades": "#6c1317"
-    }
     return (
         <div className="max-w-screen-xl m-auto mt-32">
             <div className='w-full flex items-center justify-between'>
