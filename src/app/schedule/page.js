@@ -27,7 +27,7 @@ export default function Page() {
       <div className={`mt-5 flex w-full justify-between max-sm:px-2 ${filterVisible ? "visible" : "hidden"}`}>
         {
           filters.map((filter, i) => (
-            <select className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/${filters.length} mx-1`} key={i}>
+            <select className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/3 mx-1`} key={i}>
               {
                 filter.opts.map((opt, i) => <option value={opt.value} selected={i == 0} key={i}>{opt.label}</option>)
               }
@@ -39,8 +39,8 @@ export default function Page() {
         {
           searchResults.map((result, i) =>
             // background: "linear-gradient(270deg, rgb(0, 156, 224) 27.86%, rgb(2, 35, 102) 103.89%)"
-            <div className="mt-10">
-              <div key={i} style={{ backgroundImage: "url('/images/bg/sports.png')" }} className="flex justify-between px-5 rounded-md items-center">
+            <div className="mt-10" key={i}>
+              <div style={{ backgroundImage: "url('/images/bg/sports.png')" }} className="flex justify-between px-5 rounded-md items-center">
                 <h1 className="text-2xl font-bold md:text-5xl text-white">{result.sport.toUpperCase()}</h1>
                 <Image
                   src={`/images/gameIcons/${result.sport.replace(" ", "")}.png`}
@@ -56,7 +56,7 @@ export default function Page() {
                     <div className="border border-black rounded-md mt-5 flex items-center" key={i}>
                       <div className="h-full flex flex-col justify-center items-center">
                         <p className="text-center">{game.date}</p>
-                        <p className="px-5 sm:px-16">{game.time}</p>
+                        <p className="text-center px-5 sm:px-16">{game.time}</p>
                       </div>
                       <div className="border-l border-black w-full flex flex-col justify-center items-center">
                         <h1 className="text-2xl text-gray-900 sm:text-3xl dark:text-white border-b border-black py-2 w-full pl-3">{game.title}</h1>
