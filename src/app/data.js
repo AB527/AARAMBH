@@ -5,11 +5,11 @@ export const sports = [
     },
     {
         label: "Badminton",
-        value: "bad"
+        value: "badminton"
     },
     {
         label: "Chess",
-        value: "chs"
+        value: "chess"
     }
 ]
 export const filters = [
@@ -148,6 +148,57 @@ export const players = [
         prefs: ["chess", "badminton", "football"]
     }
 ]
+export const standings = {
+    header: {
+        sports: ["Chess", "Badminton", "Table Tennis", "Volleyball", "Football", "Cricket"]
+    },
+    body: [
+        {
+            team: "renegades",
+            chess: 300,
+            badminton: 200,
+            tabletennis: 300,
+            volleyball: 400,
+            football: 500,
+            cricket: 400,
+            technical: -200,
+            total: 300
+        },
+        {
+            team: "mavericks",
+            chess: 300,
+            badminton: 200,
+            tabletennis: 300,
+            volleyball: 400,
+            football: 500,
+            cricket: 400,
+            technical: -200,
+            total: 300
+        },
+        {
+            team: "mavericks",
+            chess: 300,
+            badminton: 200,
+            tabletennis: 300,
+            volleyball: 400,
+            football: 500,
+            cricket: 400,
+            technical: -200,
+            total: 300
+        },
+        {
+            team: "mavericks",
+            chess: 300,
+            badminton: 200,
+            tabletennis: 300,
+            volleyball: 400,
+            football: 500,
+            cricket: 400,
+            technical: -200,
+            total: 300
+        }
+    ],
+}
 export const teamColors = {
     "renegades": "#6c1317"
 }
