@@ -1,18 +1,19 @@
-export const sports = [
-    {
-        label: "All sports",
-        value: "all"
-    },
-    {
-        label: "Badminton",
-        value: "badminton"
-    },
-    {
-        label: "Chess",
-        value: "chess"
-    }
-]
 export const filters = [
+    {
+        code: "sports",
+        opts: [{
+            label: "All sports",
+            value: "all"
+        },
+        {
+            label: "Badminton",
+            value: "badminton"
+        },
+        {
+            label: "Chess",
+            value: "chess"
+        }]
+    },
     {
         code: "date",
         opts: [

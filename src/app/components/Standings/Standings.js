@@ -4,7 +4,7 @@ import { standings } from "../../data";
 export default function Standings() {
     return (
         <div className="w-full px-5 md:px-0 mt-5 mb-10">
-            <h1 className="mb-10 text-4xl font-extrabold text-center leading-none tracking-tight text-gray-900 md:text-5xl dark:text-white">Standings</h1>
+            <h1 className="mb-10 text-4xl font-extrabold text-center leading-none tracking-tight text-gray-900 md:text-5xl dark:text-white">STANDINGS</h1>
             {/* <div class="relative flex py-5 items-center">
                 <div class="flex-grow border-t border-gray-400"></div>
                 <span class="flex-shrink mx-4 text-gray-400">Content</span>

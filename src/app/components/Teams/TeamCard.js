@@ -5,9 +5,10 @@ export default function TeamCard({ teamName }) {
         <Link href={`/teams/${teamName.toLowerCase()}`}>
             <Image
                 src={`/images/teams/${teamName.toLowerCase()}.png`}
-                width={300}
-                height={300}
+                width={1000}
+                height={1000}
                 alt="Picture of the author"
+                className='h-56 w-56 sm:h-72 sm:w-72 hover:scale-125 transition transform'
             />
         </Link>
     )

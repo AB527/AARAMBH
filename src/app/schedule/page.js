@@ -4,7 +4,7 @@ import Image from "next/image";
 import "./style.css"
 import Link from "next/link";
 import { useState } from "react";
-import { filters, searchResults, sports} from "../data";
+import { filters, searchResults} from "../data";
 
 export default function Page() {
   
@@ -14,7 +14,7 @@ export default function Page() {
       <div className="flex mt-10 max-sm:w-11/12 max-sm:m-auto justify-between items-center">
         <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-5/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:w-1/3">
           {
-            sports.map((sport, i) => <option value={sport.value} selected={i == 0} key={i}>{sport.label}</option>)
+            filters[0].opts.map((sport, i) => <option value={sport.value} selected={i == 0} key={i}>{sport.label}</option>)
           }
         </select>
         <Image
@@ -26,7 +26,7 @@ export default function Page() {
       </div>
       <div className={`mt-5 flex w-full justify-between max-sm:px-2 ${filterVisible ? "visible" : "hidden"}`}>
         {
-          filters.map((filter, i) => (
+          filters.slice(1).map((filter, i) => (
             <select className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/3 mx-1`} key={i}>
               {
                 filter.opts.map((opt, i) => <option value={opt.value} selected={i == 0} key={i}>{opt.label}</option>)
