@@ -1,8 +1,18 @@
+"use client"
 import Image from 'next/image'
 import PlayerCard from "./PlayerCard"
-import { players, teamColors } from "../../data"
+import Loading from "../../components/Loading"
+import { teamColors } from "../../data"
+import { useEffect, useState } from 'react'
+import { fetchAPI } from '../../utility'
 export default function Page({ params }) {
+    const [players, setPlayers] = useState([])
     const team_id = params.team_id
+    useEffect(()=>{
+        fetchAPI(`http://localhost:3000/api/teams/${team_id}`,data=>{
+            setPlayers(data)
+        })
+    },[])
     return (
         <div className="m-auto max-w-screen-xl mt-32">
             <div className='w-full flex items-center justify-between relative max-sm:px-5'>
@@ -40,7 +50,7 @@ export default function Page({ params }) {
             </div>
             <div className='mb-10'>
                 {
-                    players.map((player, i) => <PlayerCard teamColor={teamColors[team_id]} player={player} key={i} />)
+                    players.length ? players.map((player, i) => <PlayerCard teamColor={teamColors[team_id]} player={player} key={i} />) : <Loading />
                 }
             </div>
 
