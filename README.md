@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aarambh - Official Website
 
-## Getting Started
+Welcome to the Aarambh website repository! Aarambh is an annual sports event organized at IIIT Naya Raipur, designed to celebrate sportsmanship and athleticism across various disciplines. This website serves as the digital portal for Aarambh, providing visitors with up-to-date information on scores, schedules, standings, and much more.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The Aarambh website is built with a **Next.js** frontend and a **Node.js** backend, making it responsive, fast, and secure. The backend API serves dynamic data such as match scores, schedules, and team standings, all of which update in real-time to keep participants and fans engaged.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project is hosted on **Vercel**, ensuring seamless deployment and fast loading times.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Live Scores & Updates**: Stay updated with live scores across all sports.
+- **Event Schedule**: View the event schedule with details for each match or activity.
+- **Team Standings**: Track standings, rankings, and team statistics.
+- **Gallery**: Browse through event photos capturing highlights and memorable moments.
+- **User-friendly Interface**: Enjoy an intuitive, responsive design that works seamlessly on both mobile and desktop.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Frontend
+- **Next.js**: For server-rendered React applications with optimized performance.
+- **CSS Modules / Tailwind CSS**: For responsive and modern styling.
+- **Vercel**: For hosting and deploying the frontend.
 
-## Deploy on Vercel
+### Backend
+- **Node.js**: Server environment for the backend API.
+- **Express**: For handling backend routes and APIs.
+- **PostgreSQL**: For storing data related to schedules, scores, standings, etc.
+- **Vercel Serverless Functions**: Deployed via Vercel for seamless integration with the frontend.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you'd like to make improvements or report bugs, please open an issue or submit a pull request.
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/FeatureName`).
+3. Commit your changes (`git commit -m 'Add FeatureName'`).
+4. Push to the branch (`git push origin feature/FeatureName`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
