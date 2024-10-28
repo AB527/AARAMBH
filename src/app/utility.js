@@ -1,5 +1,5 @@
 export async function fetchAPI(url, cb, body={}) {
-    let response = await fetch(url, {
+    let response = await fetch(`http://localhost:3000${url}`, {
       method: "post",
       headers: {
         "Content-Type": "application/json"

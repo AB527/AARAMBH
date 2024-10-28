@@ -61,7 +61,7 @@ const data = [
 
 export default function Page() {
   return (
-    <div className="m-auto max-w-screen-xl mt-32">
+    <div className="m-auto max-w-screen-xl mt-32 mb-32 sm:mb-24">
       <h1 className="mb-7 sm:mb-10 text-3xl font-extrabold text-gray-900 md:text-5xl dark:text-white uppercase max-sm:ml-5">Photo Gallery</h1>
       <div class="grid grid-cols-1 mx-5 sm:grid-cols-2 sm:mx-0 lg:grid-cols-4 gap-2">
         {

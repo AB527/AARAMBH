@@ -9,7 +9,7 @@ export default function Page({ params }) {
     const [players, setPlayers] = useState([])
     const team_id = params.team_id
     useEffect(()=>{
-        fetchAPI(`http://localhost:3000/api/teams/${team_id}`,data=>{
+        fetchAPI(`/api/teams/${team_id}`,data=>{
             setPlayers(data)
         })
     },[])

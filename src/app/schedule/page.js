@@ -13,41 +13,43 @@ export default function Page() {
   const [filterVisible, setFilterVisible] = useState(false)
   const [filters, setFilters] = useState([])
   const [searchResults, setSearchResults] = useState([])
-  const [filterValues, setFilterValues] = useState({
+  const [filterValues, setFilterValues] = useState(JSON.stringify({
     sport: "all",
     date: "all",
     team: "all",
     gender_specs: "all"
-  })
+  }))
+
+  const getSchedule = () => {
+    setIsLoading(true)
+    fetchAPI(`/api/schedule/query`, data => {
+      setSearchResults(data)
+      setIsLoading(false)
+    }, JSON.parse(filterValues))
+  }
 
   useEffect(() => {
-    fetchAPI(`http://localhost:3000/api/schedule/pre-load`, data => {
+    fetchAPI(`/api/schedule/pre-load`, data => {
       setFilters(data)
     })
-    fetchAPI(`http://localhost:3000/api/schedule/query`, data => {
-      setSearchResults(data)
-      setIsLoading(false)
-    }, filterValues)
   }, [])
 
+  useEffect(()=>{
+    getSchedule()
+  }, [filterValues])
+
   const handleFilterChange = (code, e) => {
-    setFilterValues(prevState => {
-      prevState[code] = e.target.value
-      return prevState;
-    })
-    setIsLoading(true)
-    fetchAPI(`http://localhost:3000/api/schedule/query`, data => {
-      setSearchResults(data)
-      setIsLoading(false)
-    }, filterValues)
+    let x = JSON.parse(filterValues);
+    x[code] = e.target.value
+    setFilterValues(JSON.stringify(x))
   }
 
   return (
-    <div className="max-w-screen-xl m-auto mt-32 mb-10">
+    <div className="max-w-screen-xl m-auto mt-32 mb-28">
       <div className="flex mt-10 max-sm:w-11/12 max-sm:m-auto justify-between items-center">
-        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-5/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:w-1/3" disabled={filters.length ? false : true} onChange={e => handleFilterChange("sport", e)}>
+        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-5/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:w-1/3" disabled={filters.length ? false : true} onChange={e => handleFilterChange("sport", e)} value={JSON.parse(filterValues)["sport"]} >
           {
-            filters.length ? filters[0].opts.map((sport, i) => <option value={sport.value} selected={i == 0} key={i}>{sport.label}</option>) : <option>Select Sports</option>
+            filters.length ? filters[0].opts.map((sport, i) => <option value={sport.value} key={i}>{sport.label}</option>) : <option>Select Sports</option>
           }
         </select>
         <Image
@@ -60,9 +62,9 @@ export default function Page() {
       <div className={`mt-5 flex w-full justify-between max-sm:px-2 ${filterVisible ? "visible" : "hidden"}`}>
         {
           filters.slice(1).map((filter, i) => (
-            <select className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/3 mx-1`} key={i} onChange={e => handleFilterChange(filter.code, e)}>
+            <select className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-1/3 mx-1`} key={i} onChange={e => handleFilterChange(filter.code, e)} value={JSON.parse(filterValues)[filter.code]} >
               {
-                filter.opts.map((opt, i) => <option value={opt.value} selected={i == 0} key={i}>{opt.label}</option>)
+                filter.opts.map((opt, i) => <option value={opt.value} key={i}>{opt.label}</option>)
               }
             </select>
           ))
