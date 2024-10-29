@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Standings({ standings }) {
     return (
-        <div className="w-full px-5 md:px-0 mt-5 mb-32 sm:mb-24 ">
+        <div className="w-full px-5 md:px-0 mt-5 sm:mt-14 mb-32 sm:mb-24 ">
             <h1 className="mb-10 text-4xl font-extrabold text-center leading-none tracking-tight text-gray-900 md:text-5xl dark:text-white">STANDINGS</h1>
             {/* <div class="relative flex py-5 items-center">
                 <div class="flex-grow border-t border-gray-400"></div>
@@ -54,15 +54,15 @@ export default function Standings({ standings }) {
                                             className="m-auto"
                                         />
                                     </td>
-                                    <td className="px-6 py-4 text-center">
+                                    <td className="px-6 py-4 text-center flex justfiy-center">
                                         <Image
                                             src={`/images/teams/${team.team.toLowerCase()}.png`}
-                                            width={30}
-                                            height={30}
+                                            width={1000}
+                                            height={1000}
                                             alt={team.team}
-                                            className="m-auto inline-block"
+                                            className="h-10 w-10"
                                         />
-                                        <span className="inline-block px-3">{team.team.toString().toUpperCase()}</span>
+                                        <span className="w-full">{team.team.toString().toUpperCase()}</span>
                                     </td>
                                     {
                                         standings.header.sports.map((sport, i) =>
