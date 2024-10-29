@@ -10,6 +10,6 @@ export async function fetchAPI(url, cb, body={}) {
       let data = await response.json();
       cb(data)
     } else {
-      alert("HTTP-Error: " + response.status);
+      // alert("HTTP-Error: " + response.status);
     }
 }

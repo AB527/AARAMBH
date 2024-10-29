@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar2";
 import Footer from "./Footer";
 import Script from 'next/script'
 
