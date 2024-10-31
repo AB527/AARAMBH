@@ -100,7 +100,7 @@ export default function Page() {
                             game.participants.map((participant, i) => (
                               <div key={i} className="flex items-center px-3">
                                 <Image
-                                  src={`/images/teams/${participant.team}.png`}
+                                  src={`/images/teams/${participant.team.toLowerCase()}.png`}
                                   width={45}
                                   height={45}
                                   alt={participant.team.toUpperCase()}
