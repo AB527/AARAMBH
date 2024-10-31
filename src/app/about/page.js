@@ -4,9 +4,13 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="mt-32 flex">
-      <p className="text-3xl bg-blue">Hello</p>
-      <p className="text-3xl">Hello2</p>
+    <div class="main" mt-32>
+      <img src= "img/main.png"></img>
+      <div class="content">
+        <h4>AARAMBH</h4>
+        <p>Hello</p>
+      </div>
+    
     </div>
   );
 }
