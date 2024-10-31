@@ -16,7 +16,7 @@ export default function Component() {
       <Navbar.Toggle />
       <Navbar.Collapse>
         {
-          opts.map((opt,i)=><Navbar.Link href={`/${opt.toLowerCase()}`} active={opt==currentPage} onClick={()=>setCurrentPage(opt)}>{opt}</Navbar.Link>)
+          opts.map((opt,i)=><Navbar.Link href={`/${opt.toLowerCase()}`} key={i} active={opt==currentPage} onClick={()=>setCurrentPage(opt)}>{opt}</Navbar.Link>)
         }
       </Navbar.Collapse>
     </Navbar>

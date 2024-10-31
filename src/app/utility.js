@@ -1,5 +1,5 @@
 export async function fetchAPI(url, cb, body={}) {
-    let response = await fetch(`http://localhost:3000${url}`, {
+    let response = await fetch(`https://aarambh-server-ten.vercel.app${url}`, {
       method: "post",
       headers: {
         "Content-Type": "application/json"

@@ -78,7 +78,7 @@ export default function Page() {
               <div style={{ backgroundImage: "url('/images/bg/sports.png')" }} className="flex justify-between px-5 rounded-md items-center">
                 <h1 className="text-2xl font-bold md:text-5xl text-white">{result.sport.toUpperCase()}</h1>
                 <Image
-                  src={`/images/gameIcons/${result.sport.replace(" ", "")}.png`}
+                  src={`/images/gameIcons/${result.sport.toLowerCase().replace(" ", "")}.png`}
                   width={50}
                   height={50}
                   alt={result.sport.toUpperCase()}
@@ -100,7 +100,7 @@ export default function Page() {
                             game.participants.map((participant, i) => (
                               <div key={i} className="flex items-center px-3">
                                 <Image
-                                  src={`/images/teams/${participant.team}.png`}
+                                  src={`/images/teams/${participant.team.toLowerCase()}.png`}
                                   width={45}
                                   height={45}
                                   alt={participant.team.toUpperCase()}
