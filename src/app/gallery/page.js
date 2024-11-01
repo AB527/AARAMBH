@@ -27,7 +27,7 @@ export default function Page() {
                     <Image height={1000} width={1000} className="h-4 w-5 rounded-sm" src={`/icons/camera.png`} alt={view.title} />
                     <p className="text-sm font-bold text-white pl-1 text-center">{view.img_num}</p>
                   </div>
-                  <Image height={1000} width={1000} className="h-52 w-96 rounded-md" src={`/images/gallery/${view.thumbnail}`} alt={view.title} />
+                  <img className="h-52 w-96 rounded-md" src={view.thumbnail} alt={view.title} />
                   <p className="text-lg sm:text-lg font-bold text-white absolute bottom-2 left-3 font-sans">{view.title}</p>
                 </Link>
               ))
