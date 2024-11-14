@@ -203,3 +203,31 @@ export const standings = {
 export const teamColors = {
     "renegades": "#6c1317"
 }
+
+export const developers = [
+    {
+        img: "sanidhya.png",
+        name: "Sanidhya Solanki",
+        pos: "Backend Developer",
+    },
+    {
+        img: "atharva.png",
+        name: "Janay Bhanushali",
+        pos: "Database Engineer",
+    },
+    {
+        img: "atharva.png",
+        name: "Atharva Bedekar",
+        pos: "Team Lead",
+    },
+    {
+        img: "banoth.png",
+        name: "Banoth Digamber",
+        pos: "Documentation",
+    },
+    {
+        img: "atharva.png",
+        name: "Tanmay",
+        pos: "Frontend Design",
+    }
+]

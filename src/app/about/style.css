@@ -1,3 +1,24 @@
 .good {
     color: aqua;
 }
+.mains{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: aqua;
+}
+.mains img{
+    height: auto;
+    width: 500px;
+}
+.about-text{
+    width: 550px;
+}
+.mains{
+    width: 410px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: centre;
+    justify-content: space around;
+
+}
