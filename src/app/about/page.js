@@ -5,7 +5,7 @@ import { developers } from "../data"
 
 export default function Page() {
   return (
-    <div class="m-auto max-w-screen-xl mt-32 mb-32">
+    <div class="m-auto max-w-screen-xl mt-32 mb-32 text-black">
       <div class="sm:flex justify-around items-center">
         <img src="/images/about/aarambh photo.jpg" className="w-5/6 max-sm:mx-5 h-56 sm:w-1/2 sm:h-96 rounded-xl" style={{ background: "linear-gradient(to right, #d587ff, #d587ff00 33%, #d587ff00 66%, #d587ff)" }}></img>
         <div class="about-text">

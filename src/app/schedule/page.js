@@ -45,7 +45,7 @@ export default function Page() {
   }
 
   return (
-    <div className="max-w-screen-xl m-auto mt-32 mb-28">
+    <div className="max-w-screen-xl m-auto mt-32 mb-28 text-black">
       <div className="flex mt-10 max-sm:w-11/12 max-sm:m-auto justify-between items-center">
         <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-5/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:w-1/3" disabled={filters.length ? false : true} onChange={e => handleFilterChange("sport", e)} value={JSON.parse(filterValues)["sport"]} >
           {
