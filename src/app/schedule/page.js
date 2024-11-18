@@ -104,7 +104,6 @@ export default function Page() {
                                   width={45}
                                   height={45}
                                   alt={participant.team.toUpperCase()}
-                                // className="my-2 sm:my-4"
                                 />
                                 <h1 className="text-lg text-gray-900 sm:text-xl dark:text-white my-1 w-full pl-3">{participant.name}</h1>
                                 <h1 className="text-lg text-right text-gray-900 sm:text-xl dark:text-white my-1 w-full pr-3">{participant.score}</h1>

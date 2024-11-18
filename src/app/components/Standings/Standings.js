@@ -12,7 +12,7 @@ export default function Standings({ standings }) {
 
             <div className="w-full overflow-x-auto">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead className="text-lg text-gray-200 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400" style={{ backgroundImage: "url('/images/bg/sports.png')" }}>
+                    <thead className="text-lg text-gray-200 uppercase bg-gray-50 dark:text-gray-400" style={{ backgroundImage: "url('/images/bg/sports.png')" }}>
                         <tr>
                             <th scope="col" className="px-6 py-3 text-center">
                                 Rank
