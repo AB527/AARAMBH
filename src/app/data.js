@@ -201,7 +201,22 @@ export const standings = {
     ],
 }
 export const teamColors = {
-    "renegades": "#6c1317"
+    renegades: {
+        primary: "#6c1317",
+        secondary: "#c99132"
+    },
+    mavericks: {
+        primary: "#c297cd",
+        secondary: "#ffffff"
+    },
+    titans: {
+        primary: "#000",
+        secondary: "#fff"
+    },
+    spartans: {
+        primary: "#105d95",
+        secondary: "#ffd159"
+    }
 }
 
 export const developers = [

@@ -14,7 +14,7 @@ export default function Page({ params }) {
         })
     },[])
     return (
-        <div className="m-auto max-w-screen-xl mt-32">
+        <div className="m-auto max-w-screen-xl mt-32 mb-32 sm:mb-24">
             <div className='w-full flex items-center justify-between relative max-sm:px-5'>
                 <Image
                     src={`/images/teams/${team_id}.png`}
@@ -50,7 +50,7 @@ export default function Page({ params }) {
             </div>
             <div className='mb-10'>
                 {
-                    players.length ? players.map((player, i) => <PlayerCard teamColor={teamColors[team_id]} player={player} key={i} />) : <Loading />
+                    players.length ? players.map((player, i) => <PlayerCard teamColors={teamColors[team_id]} player={player} key={i} />) : <Loading />
                 }
             </div>
 
