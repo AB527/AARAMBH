@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div class="m-auto max-w-screen-xl mt-32 mb-32 text-black">
       <div class="flex justify-around items-center max-sm:flex-col">
-        <img src="/images/about/aarambh photo.jpg" className="w-5/6 max-sm:mx-5 h-56 sm:w-1/2 sm:h-96 rounded-xl m-auto" style={{ background: "linear-gradient(to right, #d587ff, #d587ff00 33%, #d587ff00 66%, #d587ff)" }}></img>
+        <img src="/images/about/aarambh_photo.jpg" className="w-5/6 max-sm:mx-5 h-56 sm:w-1/2 sm:h-96 rounded-xl m-auto" style={{ background: "linear-gradient(to right, #d587ff, #d587ff00 33%, #d587ff00 66%, #d587ff)" }}></img>
         <p className="text-lg w-11/12 sm:w-2/5 max-sm:text-center max-sm:mt-10">
           Aarambh is a two-day sports festival held annually in October at the International Institute of Information Technology (IIIT) Naya Raipur, celebrating athletic skill, strategy, and team spirit. The festival features a variety of events, from outdoor sports like football, cricket, volleyball, and kabaddi to indoor games such as chess, and popular E-sports like Valorant and CS-GO. A unique highlight of Aarambh is the student auction, where participants are bid on and join different teams, adding excitement and camaraderie to the competition. Aarambh brings our campus together, creating unforgettable moments for all involved!
         </p>
@@ -16,9 +16,9 @@ export default function Page() {
         <h1 className="text-5xl font-extrabold text-center">Our Leaders</h1>
         <div class="flex justify-center sm:justify-around items-center max-sm:flex-col">
           <div>
-            <img src="/images/about/sac_president_2.png" className="w-72 h-72 rounded-xl"></img>
-            <h1 className="text-2xl font-bold text-center mt-5">Dr. Lakhindar Murmu</h1>
-            <h1 className="text-md text-center mt-1 text-gray-400">SAC President</h1>
+            <img src="/images/about/dean_academics.png" className="w-72 h-72 rounded-xl max-sm:mt-10"></img>
+            <h1 className="text-2xl font-bold text-center mt-5">Dr. Srinivasa K G</h1>
+            <h1 className="text-md text-center mt-1 text-gray-400">Dean Academics</h1>
           </div>
 
           <blockquote class="relative w-3/5 max-sm:mt-10">
