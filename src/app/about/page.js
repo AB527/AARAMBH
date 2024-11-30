@@ -15,7 +15,7 @@ export default function Page() {
       <div className="mt-16">
         <h1 className="text-5xl font-extrabold text-center">Our Leaders</h1>
         <div class="flex justify-center sm:justify-around items-center max-sm:flex-col">
-          <div>
+          <div className="hover:scale-110 transition transform hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
             <img src="/images/about/dean_academics.png" className="w-72 h-72 rounded-xl max-sm:mt-10"></img>
             <h1 className="text-2xl font-bold text-center mt-5">Dr. Srinivasa K G</h1>
             <h1 className="text-md text-center mt-1 text-gray-400">Dean Academics</h1>
@@ -40,7 +40,7 @@ export default function Page() {
         <div class="flex justify-around mt-10 max-sm:flex-col">
           {
             developers.map((dev,i) => (
-              <div className="justify-center max-sm:mt-5" key={i}>
+              <div className="justify-center max-sm:mt-5 hover:scale-110 transition transform hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]" key={i}>
                 <img src={`/images/about/developers/${dev.img}`} className="w-56 h-56 max-sm:m-auto"></img>
                 <h1 className="text-2xl font-bold text-center  mt-5">{dev.name}</h1>
                 <h1 className="text-md text-center mt-1 text-gray-400">{dev.pos}</h1>

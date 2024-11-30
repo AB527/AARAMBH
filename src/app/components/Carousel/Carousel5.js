@@ -10,10 +10,10 @@ export default function Component({ data }) {
         {
           data.map((slide,i) => (
             <Link href={"https://www.hostinger.in/tutorials/blog-examples"} target="_blank" className="relative" key={i} >
-              <img src={slide.img} alt="..." />
+              <img src={slide.news_link} alt="..." />
               <div className="absolute bottom-10 sm:bottom-48 left-0 w-full ">
-                <p className="w-full text-center text-lg sm:text-2xl font-bold text-white">{slide.title}</p>
-                <p className="w-full text-center text-xs sm:text-lg text-white">{slide.desc}</p>
+                <p className="w-full text-center text-lg sm:text-2xl font-bold text-white">{slide.news_title}</p>
+                <p className="w-full text-center text-xs sm:text-lg text-white">{slide.news_desc}</p>
               </div>
             </Link>
             ))

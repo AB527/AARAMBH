@@ -226,7 +226,7 @@ export const developers = [
         pos: "Backend Developer",
     },
     {
-        img: "atharva.png",
+        img: "janay.png",
         name: "Janay Bhanushali",
         pos: "Database Engineer",
     },
@@ -241,7 +241,7 @@ export const developers = [
         pos: "Documentation",
     },
     {
-        img: "atharva.png",
+        img: "tanmay.png",
         name: "Tanmay",
         pos: "Frontend Design",
     }
