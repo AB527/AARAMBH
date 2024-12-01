@@ -15,11 +15,11 @@ export default function Page() {
       <div className="mt-16">
         <h1 className="text-5xl font-extrabold text-center">Our Leaders</h1>
         <div class="flex justify-center sm:justify-around items-center max-sm:flex-col">
-          <div className="hover:scale-110 transition transform hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+          <Link className="hover:scale-110 transition transform hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]" href="https://www.linkedin.com/in/srinivasa-k-g-82aa7b83/" target="_blank">
             <img src="/images/about/dean_academics.png" className="w-72 h-72 rounded-xl max-sm:mt-10"></img>
             <h1 className="text-2xl font-bold text-center mt-5">Dr. Srinivasa K G</h1>
             <h1 className="text-md text-center mt-1 text-gray-400">Dean Academics</h1>
-          </div>
+          </Link>
 
           <blockquote class="relative w-3/5 max-sm:mt-10">
             <svg class="absolute -top-6 -start-8 size-16 text-gray-100" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
